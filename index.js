@@ -35,10 +35,10 @@ var subscriptionID = undefined
             console.log('Difference: '+ +difference)
             console.log('Target Difference:'+ 100000)
 
-            if(difference > 200000 ){
+            if(difference > 100000 ){
                 console.log('Cron Job Status: Waiting')
             }else{
-                console.log('Cron Job Status: Active')
+                console.log('Cron Job Status: Active'+ '\n')
                 // Subscribe Dynamically
                 subscribe(token)
                 // Wait for 3 seconds then check if i am the  100,000,000
